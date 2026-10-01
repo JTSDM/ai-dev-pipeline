@@ -2,7 +2,9 @@
 name: ai-dev-pipeline
 description: >-
   AI 辅助开发的完整编排流水线：Grill（拷问）→ Spec（规格）→ Tickets（拆票）→ Implement（实现）→ Review（审查）。
-  依据 Matt Pocock 方法论与瀑布流 2.0 洞见，用文件而非聊天记录作为交接物。按任务大小分级裁剪（L/M/S 三档）。
+  核心机制：按任务大小分级裁剪（L/M/S 三档，按出错成本选档）；交接物落盘采用双区设计（.ai-workflow/ 过程区 ↔ docs/ai-workflow/ 长期区），用文件而非聊天记录；
+  Review 阶段强制产出外部评审「逐条处置表」（采纳 / 有据反驳 / 不在本编号），禁只改不答。
+  依据 Matt Pocock 方法论与瀑布流 2.0 洞见。
   当用户要开发新功能、新模块、修 bug、改需求、重构、或任何 AI 编码任务时使用。
   若任务已有明确入口（如 skill-selector 已调度），作为开发类任务的编排层执行。
 ---
