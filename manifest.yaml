@@ -1,0 +1,6 @@
+name: ai-dev-pipeline
+version: 1.0.0
+description: "AI 辅助开发的完整编排流水线：Grill（拷问）→ Spec（规格）→ Tickets（拆票）→ Implement（实现）→ Review（审查）。以文件而非聊天记录作为交接物，按任务大小分级裁剪（L/M/S）。"
+category: development
+author: ai-dev-pipeline contributors
+license: MIT
